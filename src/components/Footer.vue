@@ -11,6 +11,7 @@
       {{ icp }}
     </a>
   </footer>
+  <BackToTop></BackToTop>
 </template>
 
 <script lang="ts" setup>
