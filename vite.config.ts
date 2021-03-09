@@ -17,11 +17,27 @@ import fs from 'fs'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/',
+  build: {
+    assetsInlineLimit: 1024 * 8
+  },
   resolve: {
     alias: {
       '@/shared': resolve(__dirname, 'src/shared'),
       '@/styles': resolve(__dirname, 'src/styles')
     }
+  },
+  optimizeDeps: {
+    include: [
+      'vue',
+      'vue-router',
+      '@vueuse/core',
+      '@iconify/iconify',
+      'dayjs',
+      'dayjs/plugin/localizedFormat',
+      'dayjs/plugin/relativeTime',
+      'dayjs/locale/zh-cn'
+    ]
   },
   plugins: [
     vue({
@@ -54,7 +70,7 @@ export default defineConfig({
     ViteComponents({
       extensions: ['vue', 'md'],
       deep: true,
-      customLoaderMatcher: path => path.endsWith('.md'),
+      customLoaderMatcher: (path) => path.endsWith('.md'),
       customComponentResolvers: ViteIconsResolver({ componentPrefix: '' })
     }),
     Icons(),

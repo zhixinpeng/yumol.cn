@@ -14,9 +14,11 @@ import { ref } from 'vue'
 
 const scrollTop = ref<number>(0)
 
-window.addEventListener('scroll', () => {
-  scrollTop.value = document.documentElement.scrollTop
-})
+if (isClient) {
+  window.addEventListener('scroll', () => {
+    scrollTop.value = document.documentElement.scrollTop
+  })
+}
 
 const scrollToTop = () => {
   if (isClient) {

@@ -64,7 +64,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { isMobile } from '@/shared/index'
+import isMobile from '@/shared/isMobile'
 import config from '@/shared/config'
 
 interface Nav {
