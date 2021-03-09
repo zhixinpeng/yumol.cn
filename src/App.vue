@@ -5,13 +5,8 @@
 </template>
 
 <script lang="ts" setup>
-import {} from 'vue'
-import { useRoute } from 'vue-router'
 import { useHead } from '@vueuse/head'
 import config from '@/shared/config'
-
-const route = useRoute()
-const { frontmatter } = route.meta
 
 useHead({
   meta: [
