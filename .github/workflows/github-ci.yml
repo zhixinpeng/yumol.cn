@@ -58,5 +58,5 @@ jobs:
           REMOTE_HOST:  ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: root
           SOURCE: dist
-          TARGET: /root/www/wwwroot/idealin.cn
+          TARGET: /www/wwwroot/idealin.cn
           ARGS: "-rltgoDzvO --delete"
