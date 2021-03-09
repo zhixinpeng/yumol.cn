@@ -15,10 +15,11 @@ import { slugify } from './scripts/slugify'
 import matter from 'gray-matter'
 import { resolve } from 'path'
 import fs from 'fs'
+import { isDev } from './src/shared/index'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/',
+  base: isDev ? '/' : 'https://cdn.jsdelivr.net/gh/zhixinpeng/yumol.cn@gh-pages/',
   build: {
     assetsInlineLimit: 1024 * 8
   },
