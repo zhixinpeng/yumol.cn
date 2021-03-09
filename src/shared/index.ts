@@ -34,3 +34,18 @@ export const dateDisplay = (date: Date) => {
 
   return { diffDays, dateAgo }
 }
+
+/**
+ * 返回随机列表
+ * @param arr 列表
+ */
+export const shuffle = (arr: any[]): any[] => {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j: number = Math.floor(Math.random() * (i + 1))
+    const item: any = arr[i]
+    arr[i] = arr[j]
+    arr[j] = item
+  }
+
+  return arr
+}

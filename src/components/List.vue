@@ -34,14 +34,57 @@
     </ul>
 
     <!-- 分页器 -->
+    <section class="flex justify-center items-center">
+      <!-- 第一页 -->
+      <div class="mx-4">
+        <router-link v-if="currentPage > 1" :to="{ name: articleRouteName }">First</router-link>
+        <span v-else class="opacity-50">First</span>
+      </div>
+      <!-- 上一页 -->
+      <div class="mx-4">
+        <router-link v-if="currentPage === 2" :to="{ name: articleRouteName }">Prev</router-link>
+        <router-link
+          v-else-if="currentPage > 2"
+          :to="{ name: articleRouteName, params: { page: currentPage - 1 } }"
+        >
+          Prev
+        </router-link>
+        <span v-else class="opacity-50">Prev</span>
+      </div>
+      <!-- 下一页 -->
+      <div class="mx-4">
+        <router-link
+          v-if="currentPage < pageTotal"
+          :to="{ name: articleRouteName, params: { page: currentPage + 1 } }"
+        >
+          Next
+        </router-link>
+        <span class="opacity-50" v-else>Next</span>
+      </div>
+      <!-- 最后一页 -->
+      <div class="mx-4">
+        <router-link
+          v-if="currentPage < pageTotal"
+          :to="{ name: articleRouteName, params: { page: pageTotal } }"
+        >
+          Last
+        </router-link>
+        <span v-else class="opacity-50">Last</span>
+      </div>
+    </section>
   </section>
+
+  <!-- 侧边栏 -->
+  <Sidebar></Sidebar>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
+import { useHead } from '@vueuse/head'
 import { isDev, isArticle, dateDisplay } from '@/shared/index'
+import config from '@/shared/config'
 
 interface List {
   path: string
@@ -61,6 +104,7 @@ const articleTotal = ref<number>(1)
 const pageTotal = ref<number>(1)
 const pageSize = ref<number>(10)
 const currentPage = ref<number>(1)
+const articleRouteName = ref<string>('article-page')
 
 // 获取分页信息
 const getPageInfo = () => {
@@ -74,7 +118,7 @@ const getPageInfo = () => {
     })
     .sort(
       (a, b) =>
-        +new Date((b.meta.frontmatter as any).date) - +new Date((b.meta.frontmatter as any).date)
+        +new Date((b.meta.frontmatter as any).date) - +new Date((a.meta.frontmatter as any).date)
     )
 
   // 获取文章总数
@@ -92,10 +136,10 @@ const getPageInfo = () => {
     }
   }
 
-  // 获取文章列表
   getArticleList()
 }
 
+// 获取文章列表
 const getArticleList = () => {
   const START: number = 0 + pageSize.value * (currentPage.value - 1)
   const END: number = START + pageSize.value
@@ -119,5 +163,17 @@ const getArticleList = () => {
   })
 }
 
+// 初始执行获取页面信息
 getPageInfo()
+
+// 设置页面信息
+useHead({
+  title: `文章列表 - ${config.title}`,
+  meta: [
+    {
+      property: 'og:title',
+      content: `文章列表 - 第${currentPage.value}页 - ${config.title}`
+    }
+  ]
+})
 </script>

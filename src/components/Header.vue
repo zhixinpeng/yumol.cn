@@ -7,7 +7,7 @@
       <div class="flex flex-shrink-0 md:w-14 w-8 md:h-14 h-8 rounded-full overflow-hidden">
         <img
           class="img"
-          src="https://cdn.jsdelivr.net/gh/zhixinpeng/storage/img/avatar.png"
+          src="https://cdn.jsdelivr.net/gh/zhixinpeng/storage/img/avatar_60x60.png"
           :alt="name"
           width="56"
           height="56"
