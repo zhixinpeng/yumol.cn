@@ -26,6 +26,10 @@ useHead({
     {
       name: 'description',
       content: config.description
+    },
+    {
+      name: 'theme-color',
+      content: '#111111'
     }
   ]
 })

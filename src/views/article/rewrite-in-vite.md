@@ -210,7 +210,7 @@ src
 
 > 支持目前主流的暗黑模式，通过 `dark:xxxxx` 的前缀就可以轻松定制两款皮肤
 
-点一下切换皮肤：<toggle-theme />
+点一下切换皮肤：<Theme />
 
 > 用了 Tailwind 之后，你几乎可以不用写 Sass / Stylus 了，那么问题来了：如何弥补 CSS 预处理器提供的一些功能？
 

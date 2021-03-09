@@ -6,6 +6,7 @@ import ViteComponents from 'vite-plugin-components'
 import Icons, { ViteIconsResolver } from 'vite-plugin-icons'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import Markdown from 'vite-plugin-md'
+import { VitePWA } from 'vite-plugin-pwa'
 import Prism from 'markdown-it-prism'
 import Anchor from 'markdown-it-anchor'
 import Toc from 'markdown-it-table-of-contents'
@@ -43,9 +44,11 @@ export default defineConfig({
     vue({
       include: [/\.vue$/, /\.md$/]
     }),
+
     ...WindiCSS({
       safelist: 'prose prose-sm m-auto dark'
     }),
+
     Pages({
       pagesDir: 'src/views',
       extensions: ['vue', 'md'],
@@ -67,14 +70,18 @@ export default defineConfig({
         return route
       }
     }),
+
     ViteComponents({
       extensions: ['vue', 'md'],
       deep: true,
       customLoaderMatcher: (path) => path.endsWith('.md'),
       customComponentResolvers: ViteIconsResolver({ componentPrefix: '' })
     }),
+
     Icons(),
+
     PurgeIcons(),
+
     Markdown({
       wrapperComponent: 'detail',
       wrapperClasses: 'article-content prose mx-auto',
@@ -107,6 +114,49 @@ export default defineConfig({
           externalRel: 'noopener noreferrer',
           internalDomains: ['yumol.cn', 'idealin.cn']
         })
+      }
+    }),
+
+    VitePWA({
+      base: '/',
+      scope: 'https://idealin.cn/',
+      manifest: {
+        name: '彭智鑫',
+        short_name: '彭智鑫',
+        start_url: 'https://idealin.cn/',
+        theme_color: '#111111',
+        icons: [
+          {
+            src: '/avatar_32x32.png',
+            sizes: '32x32',
+            type: 'image/png'
+          },
+          {
+            src: '/avatar_128x128.png',
+            sizes: '128x128',
+            type: 'image/png'
+          },
+          {
+            src: '/avatar_144x144.png',
+            sizes: '144x144',
+            type: 'image/png'
+          },
+          {
+            src: '/avatar_192x192.png',
+            sizes: '192x192',
+            type: 'image/png'
+          },
+          {
+            src: '/avatar_256x256.png',
+            sizes: '256x256',
+            type: 'image/png'
+          },
+          {
+            src: '/avatar_512x512.png',
+            sizes: '512x512',
+            type: 'image/png'
+          }
+        ]
       }
     })
   ]
