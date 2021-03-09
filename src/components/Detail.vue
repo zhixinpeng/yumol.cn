@@ -11,7 +11,6 @@ import { useRoute } from 'vue-router'
 import { isArticle } from '@/shared/index'
 
 const route = useRoute()
-console.log(route)
 const isUserArticle = isArticle(route)
 const { frontmatter } = defineProps<{ frontmatter: any }>()
 </script>
