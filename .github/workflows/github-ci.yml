@@ -51,4 +51,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           
       # 自动部署到腾讯云服务器
-      - name: deploy to tencent
