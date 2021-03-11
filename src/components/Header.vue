@@ -54,6 +54,17 @@
           </a>
         </li>
         <li>
+          <a
+            class="select-none mr-4 text-xl"
+            href="/feed.xml"
+            target="_blank"
+            title="RSS"
+            rel="nofollow noopener noreferrer"
+          >
+            <ri-rss-fill></ri-rss-fill>
+          </a>
+        </li>
+        <li>
           <Theme></Theme>
         </li>
       </ul>
