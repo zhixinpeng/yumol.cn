@@ -50,7 +50,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
-      # 自动部署到腾讯云服务器
+      # 自动部署到腾讯云服务器之一
       - name: deploy to tencent ECS
         uses: easingthemes/ssh-deploy@v2.1.5
         with:
@@ -59,4 +59,15 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           SOURCE: dist/
           TARGET: ${{ secrets.REMOTE_TARGET }}
+          ARGS: "-rltgoDzvO --delete"
+
+      # 自动部署到腾讯云服务器之二
+      - name: deploy to tencent ECS
+        uses: easingthemes/ssh-deploy@v2.1.5
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          REMOTE_HOST:  ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          SOURCE: dist/
+          TARGET: ${{ secrets.YUMO_REMOTE_TARGET }}
           ARGS: "-rltgoDzvO --delete"
