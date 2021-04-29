@@ -42,7 +42,7 @@ async function run() {
               {
                 name: 'pengzhixin',
                 email: 'pengzhixin@live.cn',
-                link: 'https://idealin.cn'
+                link: 'https://pengyumo.com'
               }
             ]
           }
