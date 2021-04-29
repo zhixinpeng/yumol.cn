@@ -113,18 +113,18 @@ export default defineConfig({
           externalClassName: 'custom-external-link',
           externalTarget: '_blank',
           externalRel: 'noopener noreferrer',
-          internalDomains: ['yumol.cn', 'idealin.cn']
+          internalDomains: ['pengyumo.com']
         })
       }
     }),
 
     VitePWA({
       base: '/',
-      scope: 'https://idealin.cn/',
+      scope: 'https://pengyumo.com/',
       manifest: {
         name: '彭智鑫',
         short_name: '彭智鑫',
-        start_url: 'https://idealin.cn/',
+        start_url: 'https://pengyumo.com/',
         theme_color: '#111111',
         icons: [
           {
