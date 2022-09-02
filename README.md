@@ -10,3 +10,7 @@
 4. 重启编辑器
 
 由于 Tailwind 项目体积很大，加载和热更新速度非常慢，建议搭配 [Windi CSS](https://windicss.netlify.app/) 加速编译速度
+
+## Thanks
+
+[![WebStorm](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/WebStorm_Icon.svg/512px-WebStorm_Icon.svg.png?20210315203338)](https://www.jetbrains.com/?from=zhixinpeng)
