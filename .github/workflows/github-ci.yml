@@ -43,7 +43,7 @@ jobs:
 
       # 自动部署到 gh-pages 分支
       - name: deploy to gh-pages
-        uses: crazy-max/ghaction-github-pages@v2.2.0
+        uses: crazy-max/ghaction-github-pages@v2.7.0
         with:
           target_branch: gh-pages
           build_dir: dist
