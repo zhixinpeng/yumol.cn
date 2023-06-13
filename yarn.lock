@@ -1123,22 +1123,16 @@
   dependencies:
     "@types/node" "*"
 
-"@types/highlight.js@^9.7.0":
-  version "9.12.4"
-  resolved "https://registry.yarnpkg.com/@types/highlight.js/-/highlight.js-9.12.4.tgz#8c3496bd1b50cc04aeefd691140aa571d4dbfa34"
-  integrity sha512-t2szdkwmg2JJyuCM20e8kR2X59WCE5Zkl4bzm1u1Oukjm79zpbiAv+QjnwLnuuV0WHEcX2NgUItu0pAMKuOPww==
-
 "@types/linkify-it@*":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/linkify-it/-/linkify-it-3.0.0.tgz#c0ca4c253664492dbf47a646f31cfd483a6bbc95"
   integrity sha512-x9OaQQTb1N2hPZ/LWJsqushexDvz7NgzuZxiRmZio44WPuolTZNHDBCrOxCzRVOMwamJRO2dWax5NbygOf1OTQ==
 
-"@types/markdown-it@12.0.1":
-  version "12.0.1"
-  resolved "https://registry.yarnpkg.com/@types/markdown-it/-/markdown-it-12.0.1.tgz#8391e19fea4796ff863edda55800c7e669beb358"
-  integrity sha512-mHfT8j/XkPb1uLEfs0/C3se6nd+webC2kcqcy8tgcVr0GDEONv/xaQzAN+aQvkxQXk/jC0Q6mPS+0xhFwRF35g==
+"@types/markdown-it@12.2.3":
+  version "12.2.3"
+  resolved "https://registry.yarnpkg.com/@types/markdown-it/-/markdown-it-12.2.3.tgz#0d6f6e5e413f8daaa26522904597be3d6cd93b51"
+  integrity sha512-GKMHFfv3458yYy+v/N8gjufHO6MSZKCOXpZc5GXIWWy8uldwfmPn98vp81gZ5f9SVw8YYBctgfJ22a2d7AOMeQ==
   dependencies:
-    "@types/highlight.js" "^9.7.0"
     "@types/linkify-it" "*"
     "@types/mdurl" "*"
 
@@ -2991,7 +2985,18 @@ markdown-it-table-of-contents@0.5.2:
   resolved "https://registry.yarnpkg.com/markdown-it-table-of-contents/-/markdown-it-table-of-contents-0.5.2.tgz#2f941d386c277887910f2c7a8a16f5a17acb829c"
   integrity sha512-6o+rxSwzXmXCUn1n8QGTSpgbcnHBG6lUU8x7A5Cssuq5vbfzTfitfGPvQ5PZkp+gP1NGS/DR2rkYqJPn0rbZ1A==
 
-markdown-it@12.0.4, markdown-it@^12.0.4:
+markdown-it@12.3.2:
+  version "12.3.2"
+  resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-12.3.2.tgz#bf92ac92283fe983fe4de8ff8abfb5ad72cd0c90"
+  integrity sha512-TchMembfxfNVpHkbtriWltGWc+m3xszaRD0CZup7GFFhzIgQqxIfn3eGj1yZpfuflzPvfkt611B2Q/Bsk1YnGg==
+  dependencies:
+    argparse "^2.0.1"
+    entities "~2.1.0"
+    linkify-it "^3.0.1"
+    mdurl "^1.0.1"
+    uc.micro "^1.0.5"
+
+markdown-it@^12.0.4:
   version "12.0.4"
   resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-12.0.4.tgz#eec8247d296327eac3ba9746bdeec9cfcc751e33"
   integrity sha512-34RwOXZT8kyuOJy25oJNJoulO8L0bTHYWXcdZBYZqFnjIy3NgjeoM3FmPXIOFQ26/lSHYMr8oc62B6adxXcb3Q==
