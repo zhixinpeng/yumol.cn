@@ -1630,15 +1630,6 @@ clean-css@^4.2.1:
   dependencies:
     source-map "~0.6.0"
 
-clipboard@^2.0.0:
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-2.0.7.tgz#da927f817b1859426df39212ac81feb07dbaeadc"
-  integrity sha512-8M8WEZcIvs0hgOma+wAPkrUxpv0PMY1L6VsAJh/2DOKARIMpyWe6ZLcEoe1qktl6/ced5ceYHs+oGedSbgZ3sg==
-  dependencies:
-    good-listener "^1.2.2"
-    select "^1.1.2"
-    tiny-emitter "^2.0.0"
-
 cliui@^7.0.2:
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-7.0.4.tgz#a0265ee655476fc807aea9df3df8df7783808b4f"
@@ -1930,11 +1921,6 @@ delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
-
-delegate@^3.1.2:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/delegate/-/delegate-3.2.0.tgz#b66b71c3158522e8ab5744f720d8ca0c2af59166"
-  integrity sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==
 
 diacritics@1.3.0:
   version "1.3.0"
@@ -2353,13 +2339,6 @@ globals@^11.1.0:
   version "11.12.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-11.12.0.tgz#ab8795338868a0babd8525758018c2a7eb95c42e"
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
-
-good-listener@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/good-listener/-/good-listener-1.2.2.tgz#d53b30cdf9313dffb7dc9a0d477096aa6d145c50"
-  integrity sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=
-  dependencies:
-    delegate "^3.1.2"
 
 graceful-fs@^4.1.6, graceful-fs@^4.2.0:
   version "4.2.6"
@@ -2979,12 +2958,12 @@ markdown-it-external-links@0.0.6:
   resolved "https://registry.yarnpkg.com/markdown-it-external-links/-/markdown-it-external-links-0.0.6.tgz#9503258fce4c81010ea15fe71769d63a1346d801"
   integrity sha512-b0fsXGsf0higb7DEthr8ZKYErRB4ftIw1iklUZz0iN3leZxIZMEiFspfFdKrzpfblleZMnitz6ETTDgphjCSuA==
 
-markdown-it-prism@2.1.6:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/markdown-it-prism/-/markdown-it-prism-2.1.6.tgz#ad47e8f66246183df46ac9bd55812901d607aab0"
-  integrity sha512-fuo5lq36A6kzb882vCsvdyh4HUzpwdfNkAl92cr+MjUO0Q9foz/7MZ/RpKRBlZSwt86LmPlW7ubaEwf4C+0b3g==
+markdown-it-prism@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-prism/-/markdown-it-prism-2.3.0.tgz#8b3ca2105e665ca20f62b2dc2b81f9393660a5af"
+  integrity sha512-ePtHY80gZyeje4bn3R3SL0jpd1C9HFaYffJW2Ma0YD+tspqa2v9TuVwUyFwboFu4jnFNcO8oPQROgbcYJbmBvw==
   dependencies:
-    prismjs "1.23.0"
+    prismjs "1.29.0"
 
 markdown-it-table-of-contents@0.5.2:
   version "0.5.2"
@@ -3391,12 +3370,10 @@ prism-theme-vars@0.2.0:
   resolved "https://registry.yarnpkg.com/prism-theme-vars/-/prism-theme-vars-0.2.0.tgz#1bcd81f7d2e78551ff991035c1ef6bd8eee00637"
   integrity sha512-3hsFwPB8UiMzy+o0hVgS85zZ7KNvwbBYydeOAo09Qyu3F5vYjrteorCAqIn/2oipcSL9UzizWItdNEiPaZK9KA==
 
-prismjs@1.23.0:
-  version "1.23.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.23.0.tgz#d3b3967f7d72440690497652a9d40ff046067f33"
-  integrity sha512-c29LVsqOaLbBHuIbsTxaKENh1N2EQBOHaWv7gkHN4dgRbxSREqDnDbtFJYdpPauS4YCplMSNCABQ6Eeor69bAA==
-  optionalDependencies:
-    clipboard "^2.0.0"
+prismjs@1.29.0:
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.29.0.tgz#f113555a8fa9b57c35e637bba27509dcf802dd12"
+  integrity sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==
 
 psl@^1.1.28:
   version "1.8.0"
@@ -3690,11 +3667,6 @@ section-matter@^1.0.0:
     extend-shallow "^2.0.1"
     kind-of "^6.0.0"
 
-select@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/select/-/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
-  integrity sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=
-
 "semver@2 || 3 || 4 || 5":
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
@@ -3972,11 +3944,6 @@ through2@^4.0.0:
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
-
-tiny-emitter@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
-  integrity sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
 
 to-fast-properties@^2.0.0:
   version "2.0.0"
