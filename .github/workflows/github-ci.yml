@@ -19,7 +19,7 @@ jobs:
     steps:
       # 获取源码
       - name: Checkout
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v3.6.0
 
       # 查找 yarn 缓存
       - name: Get yarn cache path
