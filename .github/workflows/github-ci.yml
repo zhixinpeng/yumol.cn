@@ -52,7 +52,7 @@ jobs:
 
       # 自动部署到腾讯云服务器之一
       - name: deploy to tencent ECS
-        uses: easingthemes/ssh-deploy@v2.1.5
+        uses: easingthemes/ssh-deploy@v4.1.10
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           REMOTE_HOST:  ${{ secrets.REMOTE_HOST }}
@@ -63,7 +63,7 @@ jobs:
 
       # 自动部署到腾讯云服务器之二
       - name: deploy to tencent ECS
-        uses: easingthemes/ssh-deploy@v2.1.5
+        uses: easingthemes/ssh-deploy@v4.1.10
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           REMOTE_HOST:  ${{ secrets.REMOTE_HOST }}
