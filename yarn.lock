@@ -2986,10 +2986,10 @@ markdown-it-prism@2.1.6:
   dependencies:
     prismjs "1.23.0"
 
-markdown-it-table-of-contents@0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/markdown-it-table-of-contents/-/markdown-it-table-of-contents-0.5.2.tgz#2f941d386c277887910f2c7a8a16f5a17acb829c"
-  integrity sha512-6o+rxSwzXmXCUn1n8QGTSpgbcnHBG6lUU8x7A5Cssuq5vbfzTfitfGPvQ5PZkp+gP1NGS/DR2rkYqJPn0rbZ1A==
+markdown-it-table-of-contents@0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-table-of-contents/-/markdown-it-table-of-contents-0.8.0.tgz#14437f4ad083ddaaeb1dfea70839766e27d3474f"
+  integrity sha512-ihgUROZLw4ZsojxXrNZJP+VxYL4yTino51TP7eVYccEwgsYGC6CNXxv5G5JI89NhUb52wiRaMhEtWpiMAeRirA==
 
 markdown-it@12.0.4, markdown-it@^12.0.4:
   version "12.0.4"
