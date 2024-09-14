@@ -45,7 +45,7 @@
     "markdown-it-external-links": "0.0.6",
     "markdown-it-prism": "2.1.6",
     "markdown-it-table-of-contents": "0.5.2",
-    "postcss": "8.2.7",
+    "postcss": "8.4.47",
     "postcss-nested": "5.0.4",
     "prettier": "2.2.1",
     "prism-theme-vars": "0.2.0",
