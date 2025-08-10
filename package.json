@@ -14,7 +14,7 @@
   "dependencies": {
     "@iconify/iconify": "2.0.0-rc.6",
     "@vueuse/core": "4.3.4",
-    "@vueuse/head": "0.5.1",
+    "@vueuse/head": "0.9.8",
     "dayjs": "1.10.4",
     "nprogress": "0.2.0",
     "vue": "3.0.7",
